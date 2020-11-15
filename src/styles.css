@@ -1,0 +1,77 @@
+.search-bar {
+  border: none;
+  font-size: 16px;
+  padding: 2px 12px 9px 12px;
+}
+
+.fa-search {
+  color: #838383;
+}
+.divider {
+  color: #838383;
+  font-weight: 800;
+}
+.fa-times {
+  color: #838383;
+  font-size: 18px;
+}
+.current-city {
+  color: #064da3;
+  font-weight: 650;
+}
+.search-city {
+  margin-top: 32px;
+}
+
+.city {
+  text-transform: uppercase;
+}
+
+.current-weather {
+  margin-top: 32px;
+  color: #064da3;
+}
+.current-weather-icon {
+  width: 180px;
+}
+
+.current-weather-description {
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+.current-temp {
+  font-size: 140px;
+  margin: 0px;
+}
+.small-temp-unit {
+  font-size: 30px;
+  vertical-align: 200%;
+}
+.high-low-temp {
+  margin-top: 10px;
+  text-align: center;
+}
+.inter-temp-right {
+  margin-right: 30px;
+}
+.inter-temp-left {
+  margin-left: 30px;
+}
+.sub-weather-units {
+  margin-top: 32px;
+  color: #838383;
+}
+
+.temp {
+  font-size: 13px;
+}
+.col-md-2 {
+  padding: 0px;
+}
+.next-5-days {
+  margin-top: 32px;
+  color: #064da3;
+}
+.n5day-icon {
+  width: 64px;
+}

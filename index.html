@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/714378c648.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card text-center">
+        <div class="card-body">
+          <div class="row justify-content-md-center search">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <form id="search-form">
+                    <input
+                      type="text"
+                      placeholder="Enter a City"
+                      class="search-bar"
+                      id="city-input"
+                    />
+                    <button
+                      type="button"
+                      class="btn search-icon"
+                      id="search-button"
+                    >
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <span class="divider">|</span>
+                    <button type="button" class="btn erase-icon">
+                      <i class="fas fa-times"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-light current-city"
+                      id="display-current-city"
+                    >
+                      Current City
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-md-center search-city">
+            <div class="col col-md-2">
+              <h3 class="city-wrap-open">
+                <
+              </h3>
+            </div>
+            <div class="col-md-auto">
+              <h3 class="city" id="display-city">
+                SINGAPORE
+              </h3>
+            </div>
+            <div class="col col-md-2">
+              <h3 class="city-wrap-close">
+                >
+              </h3>
+            </div>
+          </div>
+          <h6 class="day-date" id="display-date">
+            SUNDAY, 4 OCTOBER 2020
+          </h6>
+          <h6 class="current-time" id="display-time">
+            10:00
+          </h6>
+          <div class="row justify-content-md-center current-weather">
+            <div class="col-md-5">
+              <img
+                src="Media/Mostly_cloudy.png"
+                class="current-weather-icon"
+                alt="current-weather-icon"
+              />
+              <h3 class="current-weather-description" id="weather-description">
+                MOSTLY CLOUDY
+              </h3>
+            </div>
+            <div class="col-md-5">
+              <h1 class="current-temp">
+                <span id="temperature">29</span
+                ><span class="small-temp-unit">°C</span>
+              </h1>
+              <h3 class="high-low-temp">
+                <span id="max-temp">31</span
+                ><span class="inter-temp-right">°C</span>
+                /
+                <span class="inter-temp-left" id="min-temp">26</span
+                ><span>°C</span>
+              </h3>
+            </div>
+          </div>
+          <div class="row justify-content-md-center sub-weather-units">
+            <div class="col col-md-4.5">
+              <p class="humidity">
+                HUMIDITY
+                <br />
+                <span id="humidity-value">73</span><span>%</span>
+              </p>
+            </div>
+            <div class="col col-md-auto">
+              <p class="pressure">
+                PRESSURE
+                <br />
+                <span id="pressure-value">2</span><span>hPa</span>
+              </p>
+            </div>
+            <div class="col col-md-4.5">
+              <p class="wind">
+                WIND
+                <br />
+                <span id="wind-value">10</span><span>m/s</span>
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center next-5-days">
+            <div class="col col-md-2">
+              <p class="day-1">
+                MON
+                <br />
+                <img
+                  src="Media/Mostly_cloudy.png"
+                  class="n5day-icon"
+                  alt="current-weather-icon"
+                />
+                <br />
+                <span class="temp"> 31°C / 26°C </span>
+              </p>
+            </div>
+            <div class="col col-md-2">
+              <p class="day-2">
+                TUE
+                <br />
+                <img
+                  src="Media/Mostly_cloudy.png"
+                  class="n5day-icon"
+                  alt="current-weather-icon"
+                />
+                <br />
+                <span class="temp"> 31°C / 26°C </span>
+              </p>
+            </div>
+            <div class="col col-md-2">
+              <p class="day-3">
+                WED
+                <br />
+                <img
+                  src="Media/rain_s_cloudy.png"
+                  class="n5day-icon"
+                  alt="current-weather-icon"
+                />
+                <br />
+                <span class="temp"> 30°C / 26°C </span>
+              </p>
+            </div>
+            <div class="col col-md-2">
+              <p class="day-4">
+                THU
+                <br />
+                <img
+                  src="Media/rain_s_cloudy.png"
+                  class="n5day-icon"
+                  alt="current-weather-icon"
+                />
+                <br />
+                <span class="temp"> 30°C / 26°C </span>
+              </p>
+            </div>
+            <div class="col col-md-2">
+              <p class="day-5">
+                FRI
+                <br />
+                <img
+                  src="Media/rain_s_cloudy.png"
+                  class="n5day-icon"
+                  alt="current-weather-icon"
+                />
+                <br />
+                <span class="temp"> 30°C / 26°C </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
