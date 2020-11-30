@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gowry Weather App</title>
-    <meta charset="UTF-8" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/714378c648.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="src/styles.css" />
+  
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/714378c648.js" crossorigin="anonymous"></script>
+  <link href="src/styles.css" />
   </head>
-
+  
   <body>
     <div class="container">
       <div class="card text-center">
@@ -26,28 +22,15 @@
               <div class="card">
                 <div class="card-body">
                   <form id="search-form">
-                    <input
-                      type="text"
-                      placeholder="Enter a City"
-                      class="search-bar"
-                      id="city-input"
-                    />
-                    <button
-                      type="button"
-                      class="btn search-icon"
-                      id="search-button"
-                    >
+                    <input type="text" placeholder="Enter a City" class="search-bar" id="city-input" />
+                    <button type="button" class="btn search-icon" id="search-button">
                       <i class="fas fa-search"></i>
                     </button>
                     <span class="divider">|</span>
                     <button type="button" class="btn erase-icon">
                       <i class="fas fa-times"></i>
                     </button>
-                    <button
-                      type="button"
-                      class="btn btn-light current-city"
-                      id="display-current-city"
-                    >
+                    <button type="button" class="btn btn-light current-city" id="display-current-city">
                       Current City
                     </button>
                   </form>
@@ -58,8 +41,7 @@
           <div class="row justify-content-md-center search-city">
             <div class="col col-md-2">
               <h3 class="city-wrap-open">
-                <
-              </h3>
+                < </h3>
             </div>
             <div class="col-md-auto">
               <h3 class="city" id="display-city">
@@ -80,26 +62,19 @@
           </h6>
           <div class="row justify-content-md-center current-weather">
             <div class="col-md-5">
-              <img
-                src="Media/Mostly_cloudy.png"
-                class="current-weather-icon"
-                alt="current-weather-icon"
-              />
+              <img src="Media/Mostly_cloudy.png" class="current-weather-icon" alt="current-weather-icon" />
               <h3 class="current-weather-description" id="weather-description">
                 MOSTLY CLOUDY
               </h3>
             </div>
             <div class="col-md-5">
               <h1 class="current-temp">
-                <span id="temperature">29</span
-                ><span class="small-temp-unit">°C</span>
+                <span id="temperature">29</span><span class="small-temp-unit">°C</span>
               </h1>
               <h3 class="high-low-temp">
-                <span id="max-temp">31</span
-                ><span class="inter-temp-right">°C</span>
+                <span id="max-temp">31</span><span class="inter-temp-right">°C</span>
                 /
-                <span class="inter-temp-left" id="min-temp">26</span
-                ><span>°C</span>
+                <span class="inter-temp-left" id="min-temp">26</span><span>°C</span>
               </h3>
             </div>
           </div>
@@ -131,11 +106,7 @@
               <p class="day-1">
                 MON
                 <br />
-                <img
-                  src="Media/Mostly_cloudy.png"
-                  class="n5day-icon"
-                  alt="current-weather-icon"
-                />
+                <img src="Media/Mostly_cloudy.png" class="n5day-icon" alt="current-weather-icon" />
                 <br />
                 <span class="temp"> 31°C / 26°C </span>
               </p>
@@ -144,11 +115,7 @@
               <p class="day-2">
                 TUE
                 <br />
-                <img
-                  src="Media/Mostly_cloudy.png"
-                  class="n5day-icon"
-                  alt="current-weather-icon"
-                />
+                <img src="Media/Mostly_cloudy.png" class="n5day-icon" alt="current-weather-icon" />
                 <br />
                 <span class="temp"> 31°C / 26°C </span>
               </p>
@@ -157,11 +124,7 @@
               <p class="day-3">
                 WED
                 <br />
-                <img
-                  src="Media/rain_s_cloudy.png"
-                  class="n5day-icon"
-                  alt="current-weather-icon"
-                />
+                <img src="Media/rain_s_cloudy.png" class="n5day-icon" alt="current-weather-icon" />
                 <br />
                 <span class="temp"> 30°C / 26°C </span>
               </p>
@@ -170,11 +133,7 @@
               <p class="day-4">
                 THU
                 <br />
-                <img
-                  src="Media/rain_s_cloudy.png"
-                  class="n5day-icon"
-                  alt="current-weather-icon"
-                />
+                <img src="Media/rain_s_cloudy.png" class="n5day-icon" alt="current-weather-icon" />
                 <br />
                 <span class="temp"> 30°C / 26°C </span>
               </p>
@@ -183,11 +142,7 @@
               <p class="day-5">
                 FRI
                 <br />
-                <img
-                  src="Media/rain_s_cloudy.png"
-                  class="n5day-icon"
-                  alt="current-weather-icon"
-                />
+                <img src="Media/rain_s_cloudy.png" class="n5day-icon" alt="current-weather-icon" />
                 <br />
                 <span class="temp"> 30°C / 26°C </span>
               </p>
@@ -196,7 +151,6 @@
         </div>
       </div>
     </div>
-
     <script src="src/index.js"></script>
   </body>
-</html>
+  </html>
